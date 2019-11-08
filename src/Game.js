@@ -1,17 +1,17 @@
 import React from 'react'
-import Game from './Game';
 import GameList from './GameList'
 import DisplayGame from './DisplayGame'
 
-class App extends React.Component {
-  render() {
+
+const Game = ({ yourGame }) => {
     return(
         <div className="Game">
+            <button onClick={yourGame}>Choose your Destiny</button>
             <DisplayGame />
             <GameList />
+            
         </div>
     );
-  }
 };
 
 export default Game;
